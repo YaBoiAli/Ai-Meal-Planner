@@ -27,22 +27,32 @@ class AgentState(TypedDict):
 
 model = ChatGoogleGenerativeAI(model="gemini-1.5-pro", temperature=0.4)
 
-PLAN_PROMPT = """You are an expert meal outline planner tasked with creating a meal plan outline for the next 7 days. 
+PLAN_PROMPT = """You are an expert meal outline planner tasked with creating a 7-day meal plan outline.
 Give the outline of the meal plan along with any relevant notes, calories,
 recipes based on user preferences, shopping list based on ingredients, available ingredients or instructions for the recipe."""
 
-WRITER_PROMPT = """You are an excellent meal planner generator tasked with writing excellent meal plans with schedules for the next 7 days.
-Write a detailed and concise final meal plan Following this template: 
-Breakfast -
-Lunch -
-Dinner -
+WRITER_PROMPT = """You are an excellent meal planner generator tasked with writing an excellent 7-day meal plan with schedules.
+Write a detailed and concise final 7-day meal plan Following this template:
+Day 1:
+  Breakfast -
+  Lunch -
+  Dinner -
+Day 2:
+  Breakfast -
+  Lunch -
+  Dinner -
+...
+Day 7:
+  Breakfast -
+  Lunch -
+  Dinner -
 Add optional snacks in between these times.
-Please include the shopping list, calories, protein, and ingredients for the meal plan. 
+Please include the shopping list, calories, protein, and ingredients for the meal plan.
 Generate the best meal plan possible for the user's request based on the provided template,
-Provide every detail concisely. 
+Provide every detail concisely.
 If the user provides critique, respond with a revised version of your previous attempts.
-Use all the information below as needed: 
------- 
+Use all the information below as needed:
+------
 {content}"""
 
 REFLECTION_PROMPT = """You are a critic reviewing a meal plan. 
@@ -61,6 +71,10 @@ class Queries(BaseModel):
 
 tavily = TavilyClient(api_key=os.environ["TAVILY_API_KEY"])
 
+def ensure_7_day_plan(task):
+    if "7-day meal plan" not in task:
+        task += "\nPlease create a 7-day meal plan."
+    return task
 
 def plan_node(state: AgentState):
     messages = [
@@ -121,6 +135,12 @@ def reflection_node(state: AgentState):
     reflection_node = print("Reflection Response:", response.content)
     reflection_node
     return {"critique": response.content}
+
+def ensure_7_day_plan(task):
+    if "7-day meal plan" not in task:
+        task += "\nPlease create a 7-day meal plan."
+    return task
+
 
 def research_critique_node(state: AgentState):
     messages = [
@@ -202,6 +222,7 @@ task = st.text_area("Enter your Meal Plan")
 # Button to trigger meal plan generation
 if st.button("Generate Meal Plan"):
     if task:
+        task = ensure_7_day_plan(task)  # Ensure it requests a 7-day plan
         try:
             with st.spinner("Generating your meal plan..."):
                 draft = start_agents(task)
