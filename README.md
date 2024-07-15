@@ -1,10 +1,10 @@
 # Personalized Meal Planner
 
-A system that helps users plan meals based on dietary preferences, nutritional requirements, and available ingredients. Due to insuffienct funds the AI agents can be slow sometimes. 😢
+A system that helps users plan meals based on dietary preferences, nutritional requirements, and available ingredients. Due to insufficient funds, the AI agents can be slow sometimes. 😢
 
 ## 🔍 Project Overview
 
-This project utilizes a team of AI agents to collaboratively generate personalized meal plans. The agents use the LangGraph framework and Tavily API to achieve their goals.
+This project utilizes a team of AI agents to generate personalized meal plans collaboratively. The agents use the LangGraph framework and Tavily API to achieve their goals.
 
 [LangGraph Library](https://github.com/langchain-ai/langgraph)
 
@@ -38,11 +38,11 @@ This project utilizes a team of AI agents to collaboratively generate personaliz
 
 4. Run the application:
     ```Terminal
-    To run Application go to the file Gradio_App.py and press the 'Run Python File' - on the top right if using VS code
+    streamlit run C:\PATH\TO\YOUR\Streamlit_App.py
     ```
 5. Open the app in your browser
    ```sh
-    http://localhost:5000/
+    Clicking the provided link if it doesn't automatically redirect you to it.
     ```
 
 ## 🛠️ Configuration
