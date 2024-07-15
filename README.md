@@ -22,7 +22,10 @@ This project utilizes a team of AI agents to generate personalized meal plans co
 
 ## Demo
 
-[![Watch the video](https://img.youtube.com/vi/NvHDM1ozPrU/0.jpg)](https://www.youtube.com/watch?v=NvHDM1ozPrU)
+<video width="640" height="480" controls>
+  <source src="https://github.com/YaBoiAli/Ai-Meal-Planner/releases/download/v1.0.0/Demo.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
 
 ## 🚀 Setup
 
