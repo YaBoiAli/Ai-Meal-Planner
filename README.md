@@ -49,9 +49,9 @@ This project utilizes a team of AI agents to generate personalized meal plans co
 
 Create `.env` file
 
-Add your `"TAVILY_API_KEY"` in `.env`
+Add your `"TAVILY_API_KEY"` in `.env` - ![TAVILY API](https://tavily.com/)
 
-Add your `"GOOGLE_API_KEY"` in `.env`
+Add your `"GOOGLE_API_KEY"` in `.env` - ![GEMINI API](https://aistudio.google.com/app/apikey)
 
 ## Contribution
 
