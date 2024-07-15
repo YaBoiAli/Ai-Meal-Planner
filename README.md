@@ -1,6 +1,6 @@
 # Personalized Meal Planner
 
-A system that helps users plan meals based on dietary preferences, nutritional requirements, and available ingredients.
+A system that helps users plan meals based on dietary preferences, nutritional requirements, and available ingredients. Due to insuffienct funds the AI agents can be slow sometimes. 😢
 
 ## 🔍 Project Overview
 
