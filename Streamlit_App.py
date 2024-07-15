@@ -27,11 +27,11 @@ class AgentState(TypedDict):
 
 model = ChatGoogleGenerativeAI(model="gemini-1.5-pro", temperature=0.4)
 
-PLAN_PROMPT = """You are an expert meal outline planner tasked with creating a meal plan outline. 
+PLAN_PROMPT = """You are an expert meal outline planner tasked with creating a meal plan outline for the next 7 days. 
 Give the outline of the meal plan along with any relevant notes, calories,
 recipes based on user preferences, shopping list based on ingredients, available ingredients or instructions for the recipe."""
 
-WRITER_PROMPT = """You are an excellent meal planner generator tasked with writing excellent meal plans with schedules.
+WRITER_PROMPT = """You are an excellent meal planner generator tasked with writing excellent meal plans with schedules for the next 7 days.
 Write a detailed and concise final meal plan Following this template: 
 Breakfast -
 Lunch -
