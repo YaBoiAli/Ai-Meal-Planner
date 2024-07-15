@@ -22,7 +22,7 @@ This project utilizes a team of AI agents to generate personalized meal plans co
 
 ## Demo
 
-![Demo](https://www.youtube.com/watch?v=NvHDM1ozPrU)
+[![Watch the video](https://img.youtube.com/vi/NvHDM1ozPrU/0.jpg)](https://www.youtube.com/watch?v=NvHDM1ozPrU)
 
 ## 🚀 Setup
 
