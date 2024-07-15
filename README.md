@@ -22,7 +22,8 @@ This project utilizes a team of AI agents to generate personalized meal plans co
 
 ## Demo
 
-https://github.com/YaBoiAli/Ai-Meal-Planner/releases/download/v1.0.0/Demo.mp4
+https://github.com/user-attachments/assets/62afabee-cb4d-4a8a-8598-97251d94c935
+
 
 ## 🚀 Setup
 
