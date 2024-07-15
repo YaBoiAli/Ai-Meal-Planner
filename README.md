@@ -18,9 +18,7 @@ This project utilizes a team of AI agents to collaboratively generate personaliz
 
 ## Flow Chart
 
-<div align="center">
-<img align="center" height="500" src="./img/AI-Meal-Planner.png">
-</div>
+![Flowchart](./img/AI-Meal-Planner.png)
 
 ## 🚀 Setup
 
