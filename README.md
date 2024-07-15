@@ -2,19 +2,27 @@
 
 A system that helps users plan meals based on dietary preferences, nutritional requirements, and available ingredients.
 
-## Project Overview
+## 🔍 Project Overview
 
 This project utilizes a team of AI agents to collaboratively generate personalized meal plans. The agents use the LangGraph framework and Tavily API to achieve their goals.
+
+[LangGraph Library](https://github.com/langchain-ai/langgraph)
 
 ## Agents
 
 1. **Meal Planner Agent**: Responsible for creating an initial meal plan outline based on the user's task description.
 2. **Meal Plan Generator Agent**: Generates a detailed meal plan based on the initial outline and the gathered research content.
-3. **Reflect Meal Plan Agent**: Geenerates a list of search queries to gather additional information needed to make any requested revisions based on the critique.
+3. **Reflect Meal Plan Agent**: Generates a list of search queries to gather additional information needed to make any requested revisions based on the critique.
 4. **Meal Plan Researcher Agent**: Generates a list of search queries to gather relevant information (such as calories, protein, ingredients, and recipes) needed to create a detailed meal plan. Researches Meal plan based on generated search query.
 5. **Meal Plan Critique Agent**: Reviews the detailed meal plan draft and provides critique and recommendations for improvement.
 
-## Setup
+## Flow Chart
+
+<div align="center">
+<img align="center" height="500" src="./img/AI-Meal-Planner.png">
+</div>
+
+## 🚀 Setup
 
 1. Clone the repository:
     ```Terminal
@@ -34,8 +42,12 @@ This project utilizes a team of AI agents to collaboratively generate personaliz
     ```Terminal
     To run Application go to the file Gradio_App.py and press the 'Run Python File' - on the top right if using VS code
     ```
+5. Open the app in your browser
+   ```sh
+    http://localhost:5000/
+    ```
 
-## Configuration
+## 🛠️ Configuration
 
 Create `.env` file
 
