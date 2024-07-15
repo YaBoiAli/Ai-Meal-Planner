@@ -20,6 +20,10 @@ This project utilizes a team of AI agents to generate personalized meal plans co
 
 ![Flowchart](./img/AI-Meal-Planner.png)
 
+## Demo
+
+![Demo](./img/Demo.mp4)
+
 ## 🚀 Setup
 
 1. Clone the repository:
