@@ -25,7 +25,7 @@ class AgentState(TypedDict):
     revision_number: int
     max_revisions: int
 
-model = ChatGoogleGenerativeAI(model=os.environ["GEMINI_MODEL"], temperature=0.4)
+model = ChatGoogleGenerativeAI(model="gemini-1.5-pro", temperature=0.4)
 
 PLAN_PROMPT = """You are an expert meal outline planner tasked with creating a meal plan outline. 
 Give the outline of the meal plan along with any relevant notes, calories,
