@@ -54,9 +54,9 @@ https://github.com/user-attachments/assets/62afabee-cb4d-4a8a-8598-97251d94c935
 
 Create `.env` file
 
-Add your `"TAVILY_API_KEY"` in `.env` - ![TAVILY API](https://tavily.com/)
+Add your `"TAVILY_API_KEY"` in `.env` - (https://tavily.com/)
 
-Add your `"GOOGLE_API_KEY"` in `.env` - ![GEMINI API](https://aistudio.google.com/app/apikey)
+Add your `"GOOGLE_API_KEY"` in `.env` - [GEMINI API](https://aistudio.google.com/app/apikey)
 
 ## Contribution
 
